@@ -26,7 +26,7 @@ export class AppComponent {
 					// create a Satellite object 
 					let satellite = new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
 					// add the new Satellite object to sourceList 
-					this.sourceList.push(satellite);
+					this.sourceList.push(satellite);//\guide\template-syntax
 				 }
 
 				 // make a copy of the sourceList to be shown to the user
