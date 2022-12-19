@@ -9,6 +9,8 @@ import { Satellite } from '../satellite';
 export class OrbitCountsComponent implements OnInit {
 
 	@Input() satellites: Satellite[];
+	satelliteCount: number=0;
+
 
   constructor() { }
 
@@ -27,5 +29,8 @@ export class OrbitCountsComponent implements OnInit {
 	return count;
  }
 
+ countSatellites(){
+	return this.satellites.length;
+ }
 
 }
